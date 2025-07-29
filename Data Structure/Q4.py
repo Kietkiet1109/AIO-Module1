@@ -1,4 +1,4 @@
-def word_count(file_path):
+def count_words(file_path):
     file = open(file_path, 'r')
     word_dict = dict()
 
@@ -16,4 +16,5 @@ def word_count(file_path):
 
 
 file_path = 'P1_data.txt'
-print(word_count(file_path))
+print(count_words(file_path)['success'])
+print(count_words(file_path)['man'])

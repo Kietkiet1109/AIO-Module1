@@ -1,7 +1,7 @@
-def count_chars(string):
+def count_chars(inp_str):
     char_dict = dict()
 
-    for char in string:
+    for char in inp_str:
         if char in char_dict:
             char_dict[char] += 1
         else:
@@ -10,5 +10,8 @@ def count_chars(string):
     return char_dict
 
 
-print(count_chars('Happiness'))
-print(count_chars('smiles'))
+test_string = 'Happiness'
+print(count_chars(inp_str = test_string))
+
+string = 'smiles'
+print(count_chars(inp_str = string))
